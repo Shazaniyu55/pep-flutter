@@ -1,5 +1,6 @@
 // ignore_for_file: deprecated_member_use
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   static const Color primary = Color.fromARGB(255, 78, 93, 255);
@@ -14,8 +15,11 @@ class AppTheme {
   static const Color divider = Color(0xFFE2E2E2);
   static const Color cardBg = Color(0xFFFFFFFF);
 
+
+
   static ThemeData get light => ThemeData(
         useMaterial3: true,
+        textTheme: GoogleFonts.poppinsTextTheme(),
         fontFamily: 'SF Pro Display',
         colorScheme: const ColorScheme.light(
           primary: primary,
